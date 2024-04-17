@@ -1,0 +1,60 @@
+.code {
+  display: flex;
+  flex-direction: column;
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  padding-inline: 20px;
+}
+
+select {
+  width: max-content;
+  height: max-content;
+  padding: 2px;
+}
+
+.code-editor {
+  flex: 1;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.5); /* Transparent white background */
+  backdrop-filter: blur(10px); /* Apply blur effect */
+}
+
+.output-head button {
+  margin: 10px;
+  width: 100px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.output {
+  margin-block: 10px;
+  border: 1px solid black;
+  padding: 5px;
+  border-radius: 12px;
+}
+
+.output p {
+  margin-top: -10px;
+  margin-left: 10px;
+  font-size: large;
+}
+
+.output-head {
+  display: flex;
+  justify-content: space-between;
+}
+
+.output h3 {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.rotate {
+  transform: rotate(180deg);
+}

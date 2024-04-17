@@ -1,0 +1,49 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  margin-block: 10px;
+  font-weight: 500;
+}
+
+.codeenv {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.question {
+  resize: horizontal;
+  overflow: auto;
+  padding-inline: 15px;
+  max-width: 50%;
+  min-width: 30%;
+  height: max-content;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.2); /* Transparent white background */
+  backdrop-filter: blur(10px); /* Apply blur effect */
+}
+
+.statement {
+  text-wrap: wrap;
+  background: black;
+}
+
+.solution, .question {
+  overflow: auto;
+  max-height: 650px
+}
+
+.solution {
+  resize: horizontal;
+  overflow: auto;
+  flex: 1;
+  min-width: 40%;
+}
+
+::-webkit-scrollbar {
+  width: 0
+}
